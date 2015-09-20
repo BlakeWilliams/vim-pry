@@ -3,6 +3,8 @@
 Insert `pry` statements quickly and easily into your buffer based on the
 filetype.
 
+tl;dr put `nmap <leader>d :call pry#insert()<cr>` somewhere in your `.vimrc`.
+
 ## Usage
 
 In vim make a mapping to call `pry#insert()` and when you're in a file with the
