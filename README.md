@@ -18,10 +18,10 @@ You probably want to define a mapping to this function for ease of use: `nmap
 
 ## pry_map
 
-This works based on a global dictionary called `g_pry_map`. The key is the
-filetype and the value is the text to insert.
+This works based on a global dictionary variable called `g:pry_map`. The key is
+the filetype and the value is the text to insert.
 
-Let's say you're a JavaScript developer and a stroke of genius hits you and you
+Lets say you're a JavaScript developer and a stroke of genius hits you and you
 decide that `alert('hit!');` is better than `debugger;`. You could replace the
 mapping with `let g:pry_map.javascript = "alert('hit');"`.
 
