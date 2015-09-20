@@ -2,6 +2,8 @@ if exists("g:loaded_pry") || &cp || v:version < 700
   finish
 endif
 
+let g:loaded_pry = 1
+
 let g:pry_map = {
       \ 'ruby' : "require 'pry'; binding.pry",
       \ 'javascript' : 'debugger',
