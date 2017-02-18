@@ -16,6 +16,8 @@ function! pry#insert()
     let text = get(g:pry_map, &filetype)
     call feedkeys('o', 'i')
     call feedkeys(text)
+    call feedkeys("\<Esc>")
+    call feedkeys(":w\<CR>")
   else
     echo 'No mapping defined for filetype: ' . &filetype
   endif
