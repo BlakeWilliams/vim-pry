@@ -9,6 +9,7 @@ let g:pry_map = {
       \ 'javascript' : 'debugger',
       \ 'javascript.jsx' : 'debugger',
       \ 'elixir' : 'require IEx; IEx.pry',
+      \ 'eruby' : "<% require 'pry'; binding.pry %>",
       \}
 
 function! pry#insert()
